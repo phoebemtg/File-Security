@@ -11,24 +11,26 @@ Prerequesites:
 This will start the server, and you can interact with the authentication and file storage system.
 
 Key Features: 
-User Authentication
+
+User Authentication: 
+
   1. Account Setup:
-  On user registration, key pairs for digital signatures and RSA encryption are   generated. The root key is derived from the password using Argon2 and is used   to derive encryption and MAC keys.
+  On user registration, key pairs for digital signatures and RSA encryption are   generated. The root key is derived   from the password using Argon2 and is used   to derive encryption and MAC keys.
   
   2.Logging In:
-  During login, the root key is re-derived from the password, and the user data   is decrypted and verified using HMAC.
+  During login, the root key is re-derived from the password, and the user data   is decrypted and verified using      HMAC.
 
 File Storage: 
   1. Storing Files:
   Files are encrypted with a file key and stored as FileNode and ContentNode      structs. A linked list of content nodes is maintained for large files.
   
   2. Appending to Files:
-  New content can be appended to existing files by creating new ContentNode       structs and updating the FileHead linked list.
+  New content can be appended to existing files by creating new ContentNode       structs and updating the FileHead    linked list.
 
 File Sharing: 
 
   1. Invitations:
-  Users can share files by creating invitations encrypted with the recipient's    public key. The invitations are signed with the sender's private key.
+  Users can share files by creating invitations encrypted with the recipient's    public key. The invitations are      signed with the sender's private key.
 
   2. Revoking Access:
   To revoke access, the file key is updated, and the revoked user is removed      from the file's access list.
