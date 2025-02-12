@@ -1,8 +1,10 @@
 This project implements a secure file storage and user authentication system designed to provide robust data protection and access control. The system leverages modern encryption techniques, including RSA (asymmetric encryption), AES (symmetric encryption), HMAC (message authentication codes), and digital signatures to secure both user data and file content.
 
 To get started with this project, clone the repository and set up the necessary environment:
-git clone https://github.com/yourusername/secure-file-storage.git
-cd secure-file-storage
+
+    git clone https://github.com/yourusername/secure-file-storage.git
+
+    cd secure-file-storage
 
 Prerequesites: 
 - The project is built using Go. Ensure that you have Go installed on your system.
