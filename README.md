@@ -9,7 +9,8 @@ To get started with this project, clone the repository and set up the necessary 
 Prerequesites: 
 - The project is built using Go. Ensure that you have Go installed on your system.
 - Dependencies: The project requires several dependencies. To install them, run:
-  go mod tidy
+
+        go mod tidy
 This will start the server, and you can interact with the authentication and file storage system.
 
 Key Features: 
