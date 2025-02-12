@@ -16,6 +16,7 @@ User Authentication:
 
   1. Account Setup:
   On user registration, key pairs for digital signatures and RSA encryption are   generated. The root key is derived   from the password using Argon2 and is used   to derive encryption and MAC keys.
+  
   2.Logging In:
   During login, the root key is re-derived from the password, and the user data   is decrypted and verified using      HMAC.
 
